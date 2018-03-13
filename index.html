@@ -1,57 +1,237 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Белка в колесе - медбрат</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Белка в колесе</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
     <div class="jumbotron jumbotron-fluid">
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12">
-      <h1 class="display-4">Медбрат</h1>
+          <div class="container">
+                  <div class="row">
+                    <div class="col-8">
+                    </div>
+                    <div class="col-2">
+                      <button type="button" class="btn btn-outline-warning">Отменить</button>
+                    </div>
+                    <div class="col-2">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroup-sizing-lg">мес./круг</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="5" readonly>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="row">
+                        <div class="col-12">
+                          <h1 class="display-4">Медбрат</h1>
+                        </div>
+
+                            <div class="col-6">
+                                    <div class="input-group input-group-lg">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-lg">ЗП</span>
+                                      </div>
+                                      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="6000" readonly>
+                                    </div>
+
+
+                                    <div class="input-group input-group-lg">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-lg">Б1 </span>
+                                      </div>
+                                      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+
+                                    <div class="input-group input-group-lg">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-lg">Б2 </span>
+                                      </div>
+                                      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+
+                                    <div class="input-group input-group-lg">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-lg">Б3 </span>
+                                      </div>
+                                      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+
+                                    <div class="input-group input-group-lg">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-lg">Б4 </span>
+                                      </div>
+                                      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                    <div class="">
+                                        <button type="button" class="btn btn-outline-secondary">Круг</button>
+                                    </div>
+                            </div>
+
+
+
+                            <div class="col-6">
+                                    <div class="input-group input-group-lg">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-lg">Возраст</span>
+                                      </div>
+                                      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="22" readonly>
+                                    </div>
+
+                                    <div class="input-group input-group-lg">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="">Зан, тек.</span>
+                                      </div>
+                                      <input type="text" class="form-control" placeholder="55" readonly>
+                                      <input type="text" class="form-control" placeholder="95" readonly>
+                                    </div>
+
+                                    <div class="input-group input-group-lg">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-lg">Благотворительность</span>
+                                      </div>
+                                      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+
+                                    <div class="input-group input-group-lg">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-lg">Ипотека</span>
+                                      </div>
+                                      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+
+                                    <div class="input-group input-group-lg">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-lg">Кредит авто</span>
+                                      </div>
+                                      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+
+                                    <div class="input-group input-group-lg">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-lg">Кредитка</span>
+                                      </div>
+                                      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+
+                                    <div class="input-group input-group-lg">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-lg">Дети, шт.</span>
+                                      </div>
+                                      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+
+
+                            </div>
+                    </div>
+                </div>
+    </div>
+
+
+    <div class="container">
+
+                            <div class="card">
+                    <div class="card-body">
+                          <div class="row">
+                                  <div class="col-6">
+                                    <div class="input-group">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-lg">Налоги</span>
+                                      </div>
+                                      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="5" readonly>
+                                    </div>
+
+                                    <div class="input-group">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-lg">Комуналка</span>
+                                      </div>
+                                      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="5" readonly>
+                                    </div>
+
+                                    <div class="input-group">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-lg">Кредитка</span>
+                                      </div>
+                                      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="5" readonly>
+                                    </div>
+
+                                    <div class="input-group">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-lg">Кредит авто</span>
+                                      </div>
+                                      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="5" readonly>
+                                    </div>
+
+                                  </div>
+
+                                  <div class="col-6">
+                                    <div class="input-group">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-lg">Ипотека</span>
+                                      </div>
+                                      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="5" readonly>
+                                    </div>
+                                    <div class="input-group">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-lg">авто</span>
+                                      </div>
+                                      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="5" readonly>
+                                    </div>
+
+                                    <div class="input-group">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-lg">Прочее</span>
+                                      </div>
+                                      <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="5" readonly>
+                                    </div>
+
+                                  </div>
+                          </div>
+                  </div>
+
+
+
+                  <table class="table table-bordered">
+                    <thead class="thead-light">
+                      <tr>
+                        <th scope="col">Доходы</th>
+                        <th scope="col">Расходы</th>
+                        <th scope="col">ДП</th>
+                        <th scope="col">ДП.круг</th>
+                        <th scope="col">Кеш</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>6000</td>
+                        <td>4000</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
       </div>
 
-<div class="col-sm-6">
-    <p class="lead">Возраст: 22</p>
-  <p class="lead">Зарплата: 6000</p>
-</div>
-<div class="col-sm-6">
-  <p class="lead text-success">Доходы: 6000</p>
-  <p class="lead text-danger">Расходы: 4000</p>
-</div>
-</div>
 
-</div>
-</div>
+
+
+
+
     <div class="container">
-          <div class="row">
-        <div class="col-sm-12">
-            <div class="input-group input-group-lg">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-lg">Б1</span>
-  </div>
-  <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-</div>
-<div class="input-group input-group-lg">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-lg">Б2</span>
-  </div>
-  <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-</div>
-<div class="input-group input-group-lg">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-lg">Б3</span>
-  </div>
-  <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-</div>
+      <div class="row justify-content-md-center">
+        <div class="col-">
+          <button type="button" class="btn btn-outline-secondary">Круг</button>
         </div>
       </div>
     </div>
 
-  </body>
+</body>
 </html>
